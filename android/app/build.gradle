@@ -12,7 +12,7 @@ def enableSeparateBuildPerCPUArchitecture = false
 
 android {
     compileSdkVersion 24
-    buildToolsVersion "24.0.3"
+    buildToolsVersion "26.0.1"
     defaultConfig {
         applicationId "com.walmartlabs.ern"
         minSdkVersion 16
@@ -69,5 +69,5 @@ dependencies {
     testCompile 'junit:junit:4.12'
 
     // Recompile this dependency on every build as it can be updated at any time (snapshot)
-    compile('com.walmartlabs.ern:maptest-ern-container:1.0.0') { changing = true }
+    compile('com.walmartlabs.ern:runner-ern-container:1.0.0') { changing = true }
 }
